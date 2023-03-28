@@ -71,6 +71,5 @@
       "express": "latest",
       "ytdl-core": "latest",
       "pastebin-js": "^1.0.6"      
-      "whatsapp-bot-pack": "latest",
    }
 }
