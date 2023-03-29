@@ -112,7 +112,7 @@ Module(
     pattern: "mp3",
     fromMe: isPublic,
     desc: "converts video/audio/voice to mp3",
-    type: "downloader",
+    type: "converter",
   },
   async (message, match, m) => {
     if (!message.reply_message || (!message.reply_message.video && !message.reply_message.audio)) return await message.reply('Reply at audio/voice/video')  
