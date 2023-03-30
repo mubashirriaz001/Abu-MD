@@ -121,3 +121,38 @@ Module(
     return await message.sendMessage(buff, { mimetype: "audio/mpeg", quoted: message }, "audio");
   }
 );
+
+Module(
+  {
+    pattern: "photo",
+    fromMe: isPublic,
+    desc: "Changes sticker to Photo",
+    type: "converter",
+  },
+  async (message, match, m) => {
+    if (!message.reply_message)
+      return await message.reply("_Reply to a sticker_");
+    if (message.reply_message.mtype !== "stickerMessage")
+      return await message.reply("_Not a sticker_");
+    let buff = await m.quoted.download();
+    return await message.sendMessage(buff, { quoted: message }, "image");
+  }
+);
+
+Module(
+  {
+    pattern: "mp4",
+    fromMe: isPublic,
+    desc: "Changes sticker to Video",
+    type: "converter",
+  },
+  async (message, match, m) => {
+    if (!message.reply_message)
+      return await message.reply("_Reply to a sticker_");
+    if (message.reply_message.mtype !== "stickerMessage")
+      return await message.reply("_Not a sticker_");
+    let buff = await m.quoted.download();
+    let buffer = await webp2mp4(buff);
+    return await message.sendMessage(buffer, { quoted: message }, "video");
+  }
+);
