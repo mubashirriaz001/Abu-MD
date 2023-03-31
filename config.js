@@ -15,7 +15,7 @@ module.exports = {
   ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
   SESSION_ID:process.env.SESSION_ID || "Jsl~QaHPeYKcHaWV9RIAmiJV5yGyJ6KAtZSccO+i/A==",
   LANG: process.env.LANG || "EN",
-  SEND_READ: process.env.SEND_READ || false,
+  SEND_READ: process.env.SEND_READ || true,
   HANDLERS:
     process.env.HANDLER === "false" || process.env.HANDLER === "null"
       ? "^"
