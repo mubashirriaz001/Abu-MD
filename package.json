@@ -13,7 +13,6 @@
       "@adiwajshing/keyed-db": "^0.2.4",
       "@neeraj-x0/textpro": "^1.0.3",
       "@hapi/boom": "10.0.0",
-      "abu-text-pro": "1.1.0"
       "acrcloud": "^1.4.0",
       "abu-bot": "^2.4.0",
       "abu-md": "^1.2.1",
@@ -36,7 +35,6 @@
       "human-readable": "^0.2.1",
       "jimp": "^0.16.1",
       "jsdom": "^16.4.0",
-      "jsl-scraper": "2.1.5"
       "heroku-client": "^3.1.0",
       "moment-timezone": "^0.5.34",
       "mp3-cutter": "^1.0.6",
