@@ -12,7 +12,7 @@ Module(
     const botz = await FancyRandom("Testing Bot Speed")
     await message.reply(botz);
     const end = new Date().getTime();    
-const Jsl1 = await FancyRandom("✿︎Response in " + (end - start) + " ms✿︎")
+const Jsl1 = await FancyRandom("︎Response in " + (end - start) + " ms︎")
     return await message.reply(Jsl1);
   }
 );
