@@ -1,7 +1,7 @@
 {
    "name": "abu-md",
    "version": "1.0.0",
-   "description": "Abu MD - Simple whatsapp Multi Device bot based on @adiwajshing/baileys.",
+   "description": "Abu MD - Simple whatsapp Bot",
    "main": "./Abu-MD/index.js",
    "scripts": {
     "start": "supervisor -s index.js"
@@ -9,7 +9,7 @@
    "author": "Jsl",
    "license": "ISC",
    "dependencies": {
-      "@adiwajshing/baileys":"git+https://github.com/DarkWinzo/Baileys.git",     
+      "@adiwajshing/baileys":"git+https://github.com/Afx-Abu/Baileys.git",     
       "@adiwajshing/keyed-db": "^0.2.4",
       "@neeraj-x0/textpro": "^1.0.3",
       "@hapi/boom": "10.0.0",
