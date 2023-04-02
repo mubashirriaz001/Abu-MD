@@ -125,7 +125,7 @@ Module(
 Module(
   {
     pattern: "photo",
-    fromMe: isPrivate,
+    fromMe: isPublic,
     desc: "Changes sticker to Photo",
     type: "converter",
   },
