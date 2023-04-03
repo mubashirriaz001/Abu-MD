@@ -1,6 +1,6 @@
 {
    "name": "abu-md",
-   "version": "1.0.0",
+   "version": "2.0.1",
    "description": "Abu MD - Simple whatsapp Bot",
    "main": "./Abu-MD/index.js",
    "scripts": {
