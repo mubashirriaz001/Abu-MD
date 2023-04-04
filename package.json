@@ -2,7 +2,7 @@
    "name": "abu-md",
    "version": "2.0.1",
    "description": "Abu MD - Simple whatsapp Bot",
-   "main": "./Abu-MD/index.js",
+   "main": ".index.js",
    "scripts": {
     "start": "supervisor -s index.js"
    },
