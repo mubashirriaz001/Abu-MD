@@ -2,14 +2,12 @@
    "name": "abu-md",
    "version": "2.0.1",
    "description": "Abu MD - Simple whatsapp Bot",
-   "main": "./Abu-MD/index.js",
-   "scripts": {
-    "start": "supervisor -s index.js"
-   },
+   "main": "index.js",
+  "type": "commonjs",
    "author": "Jsl",
    "license": "ISC",
    "dependencies": {
-      "@adiwajshing/baileys": "4.4.0",     
+      "@adiwajshing/baileys": "github:DarkWinzo/Baileys",     
       "@adiwajshing/keyed-db": "^0.2.4",
       "@neeraj-x0/textpro": "^1.0.3",
       "@hapi/boom": "10.0.0",
