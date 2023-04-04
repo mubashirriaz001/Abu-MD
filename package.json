@@ -2,8 +2,10 @@
    "name": "abu-md",
    "version": "2.0.1",
    "description": "Abu MD - Simple whatsapp Bot",
-   "main": "index.js",
-  "type": "commonjs",
+   "main": "./Abu-MD/index.js",
+   "scripts": {
+    "start": "supervisor -s index.js"
+   },
    "author": "Jsl",
    "license": "ISC",
    "dependencies": {
