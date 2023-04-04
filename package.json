@@ -5,7 +5,7 @@
   "main": "./Abu-MD/index.js",
   "type": "commonjs",
   "dependencies": {
-    "@adiwajshing/baileys": "git+https://github.com/Afx-Abu/Baileys.js.git",  
+    "@adiwajshing/baileys": "git+https://github.com/Afx-Abu/Baileys.git",  
     "@adiwajshing/keyed-db": "^0.2.4",
     "awesome-phonenumber": "^3.3.0",
     "@neeraj-x0/textpro": "^1.0.3",
