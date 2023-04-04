@@ -135,7 +135,7 @@ Module(
     if (message.reply_message.mtype !== "stickerMessage")
       return await message.reply("_Not a sticker_");
     let buff = await m.quoted.download();
-    return await message.sendMessage(buff, {}, "image");
+    return await message.sendMessage(buff, {quoted: message}, "image");
   }
 );
 
