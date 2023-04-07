@@ -5,7 +5,7 @@ Module(
     pattern: "ping",
     fromMe: isPublic,
     desc: "check bot ping",
-    type: "user",
+    type: "misc",
   },
   async (message, match) => {
     const start = new Date().getTime();
@@ -20,7 +20,7 @@ const Jsl1 = await FancyRandom("︎Response in " + (end - start) + " ms︎")
 Module({
   pattern: 'runtime',
   fromMe: isPublic,
-  type: 'utility',
+  type: 'misc',
   desc: 'Shows Bot Running time'
 }, (async (message, match) => {
   var ut_sec = require("os").uptime(); 
