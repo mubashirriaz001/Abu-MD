@@ -4,15 +4,15 @@ Module(
   {
     pattern: "ping",
     fromMe: isPublic,
-    desc: "Bot response in second.",
-    type: "info",
+    desc: "check bot ping",
+    type: "misc",
   },
   async (message, match) => {
     const start = new Date().getTime();
-    const botz = await FancyRandom("*Testing Speed..*")
+    const botz = await FancyRandom("Testing Bot Speed")
     await message.reply(botz);
     const end = new Date().getTime();    
-const Jsl1 = await FancyRandom("︎⟪ *Response in ' + (end - start) + ' msec* ⟫")
+const Jsl1 = await FancyRandom("︎︎⟪ Response in " + (end - start) + " ms︎ec ⟫")
     return await message.reply(Jsl1);
   }
 );
