@@ -44,19 +44,6 @@ Module({
 
 Module(
   {
-    pattern: "reboot ?(.*)",
-    fromMe: true,
-    desc: "Reboot Module.",
-    type: "misc",
-  },
-  async (message) => {
-    await message.reply("_Rebooting..._")
-    require("supervisor").restart("index.js");
-  }
-);
-
-Module(
-  {
     pattern: "readmore ?(.*)",
     fromMe: isPublic,
     desc: "Readmore generator",
