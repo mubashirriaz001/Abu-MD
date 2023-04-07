@@ -40,3 +40,42 @@ Module({
   var Jl1 = await FancyRandom(uptime_process)
     return await message.reply(Jl1);
 }));
+
+
+Module(
+  {
+    pattern: "reboot ?(.*)",
+    fromMe: true,
+    desc: "Reboot Module.",
+    type: "misc",
+  },
+  async (message) => {
+    await message.reply("_Rebooting..._")
+    require("supervisor").restart("index.js");
+  }
+);
+
+Module(
+  {
+    pattern: "readmore ?(.*)",
+    fromMe: isPublic,
+    desc: "Readmore generator",
+    type: "whatsapp",
+  },
+  async (message, match) => {
+    await message.reply(match.replace(/\+/g, (String.fromCharCode(8206)).repeat(4001)))
+  }
+);
+
+Module(
+  {
+    pattern: "wame ?(.*)",
+    fromMe: isPublic,
+    desc: "wame generator",
+    type: "whatsapp",
+  },
+  async (message, match) => {
+    let jsl = 'https://wa.me/' + (message.reply_message.jid || message.mention[0] || match).split('@')[0];
+    await message.reply(jsl)
+  }
+);
