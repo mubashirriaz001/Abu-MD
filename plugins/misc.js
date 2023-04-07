@@ -4,7 +4,7 @@ Module(
   {
     pattern: "ping",
     fromMe: isPublic,
-    desc: "check bot ping",
+    desc: "Response speed.",
     type: "misc",
   },
   async (message, match) => {
