@@ -9,10 +9,10 @@ Module(
   },
   async (message, match) => {
     const start = new Date().getTime();
-    const botz = await FancyRandom("Testing Bot Speed")
+    const botz = await FancyRandom("*Testing Speed..*")
     await message.reply(botz);
     const end = new Date().getTime();    
-const Jsl1 = await FancyRandom("︎Response in " + (end - start) + " ms︎")
+const Jsl1 = await FancyRandom("︎⟪ *Response in ' + (end - start) + ' msec* ⟫")
     return await message.reply(Jsl1);
   }
 );
