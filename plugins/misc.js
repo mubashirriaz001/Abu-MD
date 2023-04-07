@@ -4,8 +4,8 @@ Module(
   {
     pattern: "ping",
     fromMe: isPublic,
-    desc: "check bot ping",
-    type: "misc",
+    desc: "Bot response in second.",
+    type: "info",
   },
   async (message, match) => {
     const start = new Date().getTime();
