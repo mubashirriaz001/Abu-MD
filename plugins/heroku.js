@@ -44,9 +44,9 @@ Module(
     type: "heroku",
   },
   async (message, match) => {
-    if (!match) return await message.reply(`_Example: .setvar SUDO:919567489404_`);
+    if (!match) return await message.reply(`_Example: .setvar SUDO:917025994178_`);
     const [key, value] = match.split(":");
-    if (!key || !value) return await message.reply(`_Example: .setvar SUDO:918113921898_`);
+    if (!key || !value) return await message.reply(`_Example: .setvar SUDO:917025994178_`);
     heroku.patch(baseURI + "/config-vars", {
     body: { [key.toUpperCase()]: value },
     }).then(async () => {
