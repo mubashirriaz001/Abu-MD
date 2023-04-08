@@ -9,7 +9,7 @@
    "author": "Jsl",
    "license": "ISC",
    "dependencies": {
-      "@adiwajshing/baileys": "github:Afx-Abu/baileys",     
+      "@adiwajshing/baileys": "github:BrunoSobrino/baileys",     
       "@adiwajshing/keyed-db": "^0.2.4",
       "@neeraj-x0/textpro": "^1.0.3",
       "@hapi/boom": "10.0.0",
