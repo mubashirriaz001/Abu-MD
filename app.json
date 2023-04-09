@@ -19,7 +19,7 @@
             "value":"false"
         },
         "ANTILINK_ACTION": {
-            "description": "Bot will read all messages. Can be also false",
+            "description": "antilink (group link sending remove)",
             "required": true,
             "value":"false"
         },
@@ -39,7 +39,7 @@
             "value":""
         },
         "GOODBYE_MSG": {
-            "description": "good bye ✅ ",
+            "description": "good bye",
             "required": true,
             "value":"bye bye ✅"
         },
@@ -57,6 +57,11 @@
             "description": "Private or public",
             "required": true,
             "value":"public"
+        },
+        "AUTO_BIO": {
+            "description": "Change You Bio Name",
+            "required": true,
+            "value":false"
         },
         "SUDO": {
             "description": "These numbers can control your bot. seperate with commas",
