@@ -30,7 +30,7 @@ module.exports = {
   GOODBYE_MSG: process.env.GOODBYE_MSG || "Hi @user It was Nice Seeing you",
   AUTHOR: process.env.AUTHOR || "Jsl",
   DATABASE: DATABASE_URL === "./database.db" ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: false }) : new Sequelize(DATABASE_URL, {dialect: "postgres", ssl: true, protocol: "postgres", dialectOptions: { native: true, ssl: { require: true, rejectUnauthorized: false },}, logging: false }),
-    
+  AUTO_BIO: process.env.AUTO_BIO || false,  
   SUDO: process.env.SUDO || "917025994178",
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || " ",
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || " ",
