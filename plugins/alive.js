@@ -7,7 +7,7 @@ const {
 Module
 	(
 		{
-            pattern: "ty?(.*)",
+            pattern: "menu?(.*)",
 	    fromMe: isPublic,
 	    desc: "show your menu items",
             type: "info",
