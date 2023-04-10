@@ -8,7 +8,7 @@ Module(
   {
     pattern: "sticker",
     fromMe: isPublic,
-    desc: "converts Photo or video to sticker",
+    desc: "converts Photo or video to stickers",
     type: "converter",
   },
   async (message, match, m) => {
