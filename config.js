@@ -8,7 +8,7 @@ const toBool = (x) => x == "true";
 DATABASE_URL = process.env.DATABASE_URL || "./lib/database.db";
 let HANDLER = "false";
 module.exports = {
-  SESSION_ID: process.env.SESSION_ID || "",		
+  SESSION_ID: process.env.SESSION_ID || "jsl~Nf3D52D31vspBsiqSgmzOLjccOHNRRH8VfAnUw==",		
   AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? 'Abu¹ꫂ;Abu MD bot;https://www.linkpicture.com/q/rgnk.jpg' : process.env.AUDIO_DATA,
   ANTILINK: toBool(process.env.ANTI_LINK) || false,
   LOGS: toBool(process.env.LOGS) || true,
